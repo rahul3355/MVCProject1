@@ -4,14 +4,27 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Manager View</h1>
 
 <p>
-    <a asp-action="Create">Apply Leave</a>
+    @using (Html.BeginForm("Index", "Managers", FormMethod.Get))
+    {
+         <div style="display: none;"> @Html.RadioButton("searchBy", "ManagerID", true)</div>
+        <div style="margin: 20px; font-weight: bold;">
+        <text>Search by Manager ID : </text>
+        @*@Html.RadioButton("searchBy", "EmpLevel", true)
+
+        <text>Emp Level</text> <br />*@
+        
+        @Html.TextBox("search")
+
+        <input type="submit" value="Search" /></div>
+    }
 </p>
-<p>
-    <a href="@Url.Action("index","Managers")"> Manager View</a>
-</p>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
 <table class="table">
     <thead>
         <tr>
@@ -42,7 +55,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.LeaveStatus)
             </th>
-            
+
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -75,8 +89,20 @@
             <td>
                 @Html.DisplayFor(modelItem => item.LeaveStatus)
             </td>
-            
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.Lid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Lid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Lid">Delete</a>*@
+                <div style="position: relative; width: 800px;">
+                        <button style="background-color: green;"><a style="color: white;" asp-action="Edit" asp-route-id="@item.LeaveStatus">Approve</a></button>
+                        <button style="background-color: red; color: white;"><a style="color: white;" asp-action="Edit" asp-route-id="@item.LeaveStatus">Deny</a></button>
+                 </div>
+            </td>
         </tr>
 }
     </tbody>
 </table>
+
+<p>
+    <a href="@Url.Action("index","Leave5")">Back to Home</a>
+</p>

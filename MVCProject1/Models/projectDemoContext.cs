@@ -10,6 +10,8 @@ namespace MVCProject1.Models
 {
     public partial class projectDemoContext : DbContext
     {
+
+        
         public projectDemoContext()
         {
         }
@@ -18,6 +20,8 @@ namespace MVCProject1.Models
             : base(options)
         {
         }
+
+        
 
         public virtual DbSet<EmpTemp> EmpTemp { get; set; }
         public virtual DbSet<Employee2> Employee2 { get; set; }

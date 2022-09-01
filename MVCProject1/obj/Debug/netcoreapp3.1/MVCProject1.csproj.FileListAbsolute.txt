@@ -153,3 +153,9 @@ L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Leav
 L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Leave5\Details.cshtml.g.cs
 L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Leave5\Edit.cshtml.g.cs
 L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Leave5\Index.cshtml.g.cs
+L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Pages\_ValidationScriptsPartial.cshtml.g.cs
+L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Managers\Create.cshtml.g.cs
+L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Managers\Delete.cshtml.g.cs
+L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Managers\Details.cshtml.g.cs
+L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Managers\Edit.cshtml.g.cs
+L:\Hexaware\dev\MVCProject1\MVCProject1\obj\Debug\netcoreapp3.1\Razor\Views\Managers\Index.cshtml.g.cs
